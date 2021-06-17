@@ -21,11 +21,11 @@
             <div class="logo">PORTFO<span>LIO</span></div>
 
             <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#" class='nav'>Home</a>
+                <a href="#" class='nav'>About</a>
+                <a href="#" class='nav'>Skills</a>
+                <a href="#" class='nav'>Projects</a>
+                <a href="#" class='nav'>Contact</a>
             </div>
         </nav>
         <div class="text">
@@ -46,7 +46,7 @@
                 <img src="images/about1.jpg" alt="">
             </div>
             <div class="about-right-col">
-                <p id="p-title">Hi I am Aliasgar & I am a web developer</p>
+                <p id="p-title">Hi I am Aliasgar & I am <span id="animate" style="color:#e74c3c"></span></p>
                 <p>I am a computer science student with strong problem solving abilities and programming skills. I love
                     to meet new people and gain experience with a growth mindset. One thing which I implement in my work
                     is that I always want to be better than what I was yesterday. Solving real world problems using
@@ -110,13 +110,13 @@
             <p style="color:#e74c3c; font-size: 35px;">Have a look at my projects......</p>
         </div>
         <div class="projects-row">
-            <div class = "projects-box">
+            <div class = "projects-box" data-tilt>
                 <!-- <img src="images/b2.png" alt=""> -->
                 <h2>FlashChat</h2>
                 <p>FlashChat is a group chat application which is developed using flutter, firebase and cloud firestore.</p>
                 <a href=""><button class="c-btn">View Project</button></a>
             </div>
-            <div class = "projects-box">
+            <div class = "projects-box" data-tilt>
                 <!-- <img src="images/b2.png" alt=""> -->
                 <h2>Clima - A weather app</h2>
                 <p>A weather application using flutter by fetching the user’s location and
@@ -124,7 +124,7 @@
                     openweathermaps website.</p>
                     <a href=""><button class="c-btn">View Project</button></a>
             </div>
-            <div class = "projects-box">
+            <div class = "projects-box" data-tilt>
                 <!-- <img src="images/b2.png" alt=""> -->
                 <h2>Comp-Assist</h2>
                 <p>A virtual assistant using python with speech recognition which performs
@@ -179,6 +179,15 @@
         loop:true,
     })
 </script>
+<script>
+    let animate0 = new Typed('#animate',{
+        strings:["a Web developer.","a Mobile App developer.","an Engineer.","a Programmer."],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true,
+    })
+</script>
+<script src="js/tilt.jquery.min.js"></script>
 </body>
 
 </html>
