@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -13,6 +14,7 @@ header{
     background-position: right,center;
     clip-path: polygon(50% 0%,100% 0%,100% 75%,50% 100%,0% 75%,0 0);
     background-attachment: fixed;
+    
 }
 
 .logo{
@@ -245,6 +247,9 @@ footer{
 .fa{
     text-decoration: none;
 }
+#sidenav{
+    display:none;
+}
 
 @media only screen and (max-width:770px){
     header{
@@ -256,10 +261,83 @@ footer{
             display: none;
         }
     .logo{
-        padding-left: 50px;
-        text-align: center;
+        padding-left: 100px;
+        
     }
     .text{
         margin-left: 50px;
+    }
+    .about-left-col{
+        flex-basis: 100%;
+       }
+       
+       .about-left-col img{
+           width: 100%;
+           padding: 50px;
+       }
+       .about-right-col{
+           flex-basis: 100%;
+       }
+       .skills-left-col{
+        flex-basis: 100%;
+    }
+    .skills-right-col{
+        flex-basis: 100%;
+    }
+    .progress-div{
+        width:100%;
+        margin: auto;
+    }
+    progress{
+        width:80%;
+    }
+    .progress-div p{
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 5px;
+        text-align: justify;
+    }
+    .projects-box{
+        flex-basis: 100%;
+        margin-top:20px;
+    }
+    .contact-left-col{
+        flex-basis:100%;
+    }
+    .contact-right-col{
+        flex-basis:100%;
+    }
+    #sidenav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width:0px;
+        height:100vh;
+        background: rgba(0,0,0,0.8);
+        padding: 100px 0px;
+        transition: 0.5px;
+        display: block;
+    }
+    #sidenav a{
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+        margin:10px 30px;
+        padding:20px;
+        display:block;
+    }
+    #sidenav a:hover{
+        background-color: #e74c3c;
+        transition: 0.5s;
+    }
+    #menubar{
+        position: fixed;
+        top:10px;
+        left:5px;
+        width:40px;
+        padding:10px;
+        cursor:pointer;
+        height:60px;
     }
 }
