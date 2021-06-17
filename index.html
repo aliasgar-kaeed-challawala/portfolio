@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/typed.min.js"></script>
+    
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFO<span>LIO</span></div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        <div class="text">
+            <p>Hello, I am</p>
+            <h1>Aliasgar K Challawala</h1>
+            <p>And I am <span id="typeff" style="color:#e74c3c"></span></p>
+            <button class="c-btn">Hire Me</button>
+        </div>
+    </header>
+    <section id="about">
+        <div class="section-info">
+            <h1>
+                About
+            </h1>
+        </div>
+        <div class="about-row">
+            <div class="about-left-col">
+                <img src="images/about1.jpg" alt="">
+            </div>
+            <div class="about-right-col">
+                <p id="p-title">Hi I am Aliasgar & I am a web developer</p>
+                <p>I am a computer science student with strong problem solving abilities and programming skills. I love
+                    to meet new people and gain experience with a growth mindset. One thing which I implement in my work
+                    is that I always want to be better than what I was yesterday. Solving real world problems using
+                    technology has always been my goal.</p>
+                <a href="Aliasgar_CSE_VEC.pdf" download="Aliasgar_resume"><button class="c-btn">Download my
+                        resume</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="section-info">
+            <h1 style="color:white;">
+                Skills
+            </h1>
+        </div>
+        <div class="skills-row">
+            <div class="skills-left-col">
+                <p>I am a flutter developer and a newbie web developer. My area of expertise is developing android
+                    applications and also cross-platform applications using flutter. I also have sound knowledge of
+                    html, CSS, Javascrpit, Python, Bootstrap and Java.</p>
+            </div>
+            <div class="skills-right-col">
+                <div class="progress-div">
+                    <p><span>Flutter</span><br>
+                        <progress value="70" max="100"></progress>
+                        <span>70%</span>
+                    </p>
+                    <p><span>HTML</span><br>
+                        <progress value="60" max="100"></progress>
+                        <span>60%</span>
+                    </p>
+                    <p><span>CSS</span><br>
+                        <progress value="50" max="100"></progress>
+                        <span>50%</span>
+                    </p>
+                    <p><span>Python</span><br>
+                        <progress value="70" max="100"></progress>
+                        <span>70%</span>
+                    </p>
+                    <p><span>Javascrpit</span><br>
+                        <progress value="40" max="100"></progress>
+                        <span>40%</span>
+                    </p>
+                    <p><span>Bootstrap</span><br>
+                        <progress value="40" max="100"></progress>
+                        <span>40%</span>
+                    </p>
+                    <p><span>Java</span><br>
+                        <progress value="50" max="100"></progress>
+                        <span>50%</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section-info">
+            <h1 style="color:black">
+                Projects
+            </h1>
+            <p style="color:#e74c3c; font-size: 35px;">Have a look at my projects......</p>
+        </div>
+        <div class="projects-row">
+            <div class = "projects-box">
+                <!-- <img src="images/b2.png" alt=""> -->
+                <h2>FlashChat</h2>
+                <p>FlashChat is a group chat application which is developed using flutter, firebase and cloud firestore.</p>
+                <a href=""><button class="c-btn">View Project</button></a>
+            </div>
+            <div class = "projects-box">
+                <!-- <img src="images/b2.png" alt=""> -->
+                <h2>Clima - A weather app</h2>
+                <p>A weather application using flutter by fetching the user’s location and
+                    displaying the weather. Used open weather maps API to fetch the weather data from the
+                    openweathermaps website.</p>
+                    <a href=""><button class="c-btn">View Project</button></a>
+            </div>
+            <div class = "projects-box">
+                <!-- <img src="images/b2.png" alt=""> -->
+                <h2>Comp-Assist</h2>
+                <p>A virtual assistant using python with speech recognition which performs
+                    tasks based on the user input. Tasks performed by the virtual assistant include: Sending email,
+                    browsing the internet, get information about something from Wikipedia, play music and convert
+                    speech to text.</p>
+                    <a href=""><button class="c-btn">View Project</button></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="section-info" style="color: white;">
+            <h1>
+                Get In Touch
+            </h1>
+        </div>
+        <div class="contact-row">
+            <div class="contact-left-col">
+                <img src="images/b3.png" alt="">
+            </div>
+            <div class="contact-right-col">
+                <form action="mailto:aliasgarkcdls@gmail.com?subject=Test" method="POST" enctype="text/plain">
+                    <h2>Connect With Me</h2>
+                    <input type="text" name="Name" placeholder="Name">
+                    <input type="email" name="Email" placeholder="Email">
+                    <br>
+                    <textarea name="message" placeholder="Message" cols="40" rows="10"></textarea>
+                    <br>
+                    <button type="submit" class="c-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+       
+        <div class="icons">
+        <a href="#" class="fa fa-github" style="color:white"></a>
+        <a href="#" class="fa fa-linkedin" style="color:white" ></a>
+        <a href="#" class="fa fa-twitter" style="color:white" ></a>
+        <a href="#" class="fa fa-instagram" style="color:white" ></a>
+
+
+        </div>
+    </footer>
+<script>
+    let animate = new Typed('#typeff',{
+        strings:["a Web developer.","a Mobile App developer.","an Engineer.","a Programmer."],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true,
+    })
+</script>
+</body>
+
+</html>
