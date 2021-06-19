@@ -255,13 +255,14 @@ footer{
     header{
         background: url('../images/bg1.jpeg');
         background-size: cover;
+        clip-path:none;
     }
     .menu
         .nav{
             display: none;
         }
     .logo{
-        padding-left: 100px;
+        padding-left: 40px;
         
     }
     .text{
